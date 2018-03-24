@@ -49,8 +49,8 @@ class Song
    song.name = name.split(/[-.]/)[1]
    
 
-   
-   
+
+
  end
 
  def self.destroy_all
