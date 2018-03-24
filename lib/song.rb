@@ -44,6 +44,11 @@ class Song
    Song.all.sort_by{|song|song.name}
  end
 
+ def self.new_from_filename(name)
+   song_from_filename = name.split(/[-.]/)
+   song_from_filename[1].match(/\S.*/)
+ end
+
  def self.destroy_all
    self.all.clear
  end
