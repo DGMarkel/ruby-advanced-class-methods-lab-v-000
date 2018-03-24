@@ -48,7 +48,7 @@ class Song
    song = self.new
    name_from_filename = name.split(/[-.]/)
    song.name = name_from_filename[1]
-   
+
    song.name
    
  end
