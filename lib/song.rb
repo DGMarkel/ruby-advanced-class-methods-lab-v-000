@@ -46,6 +46,7 @@ class Song
 
  def self.new_from_filename(name)
    name.split(/[-.]/)
+   name
  end
 
  def self.destroy_all
