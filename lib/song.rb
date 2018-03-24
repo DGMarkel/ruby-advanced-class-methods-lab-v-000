@@ -11,26 +11,26 @@ class Song
   end
 
   def self.create
-   song = self.new
-   song.save
-   song
-  end
+   @song = self.new
+   @song.save
+   @song
+ end
 
-  def self.new_by_name(name)
+   def self.new_by_name(name)
    self.create
-   song.name = name
-   song
+   @song.name = name
+   @song
   end
 
   def self.create_by_name(name)
-    song = self.create
-    song.name = name
-    song
+    @song = self.create
+    @song.name = name
+    @song
   end
-
+  
   def self.find_by_name(name)
-    Song.all each do |song|
-      song if song.name == name
+    Song.all.each do |song|
+      puts @song.name if @song.name == name
     end
   end
   
