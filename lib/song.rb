@@ -34,8 +34,8 @@ class Song
       if song.name == name
         matches << song
       end
-      matches
     end
+    matches
   end
 
 end
