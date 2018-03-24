@@ -49,7 +49,8 @@ class Song
    name_from_filename = name.split(/[-.]/)
    song.name = name_from_filename[1]
    song.artist_name = name_from_filename[0]
-
+   name
+   artist_name
  end
 
  def self.destroy_all
